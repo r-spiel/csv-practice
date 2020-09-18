@@ -12,14 +12,13 @@ def get_all_olympic_athletes(filename)
     new_array << athlete.select { |key, value| REQUIRED_OLYMPIAN_FIELDS.include? (key) }
   end
 
-  pp new_array[0..3]
+  #pp new_array[0..3]
   # REQUIRED_OLYMPIAN_FIELDS = %w[ID Name Height Team Year City Sport Event Medal]
-
   return new_array
 end
 
 
-#I did not get this to work...
+#I did not get and of these other ones to work...
 # def total_medals_per_team(olympic_data)
 #
 #   country_medals = {}
@@ -48,6 +47,5 @@ end
 # end
 
 #get_all_olympic_athletes('../data/athlete_events.csv')
-
 
 #p total_medals_per_team(get_all_olympic_athletes('../data/athlete_events.csv'))
